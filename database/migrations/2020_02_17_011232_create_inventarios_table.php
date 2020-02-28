@@ -17,9 +17,9 @@ class CreateInventariosTable extends Migration
             $table->bigIncrements('id_libro');
             $table->string('nombre');
             $table->string('descripcion');
-            $table->integer('npagina');
-            $table->integer('edicion');
+            $table->string('genero');
             $table->string('autor');
+            $table->string('url_img');
             $table->decimal('precio',5,2);
             $table->timestamps();
         });
