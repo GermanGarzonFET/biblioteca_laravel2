@@ -22,3 +22,7 @@ Route::GET('/inventario', 'InventarioController@index')->name('inventario');
 Route::POST('/inventario', 'InventarioController@store')->name('store');
 
 Route::resource('inicio', 'InicioController');
+
+Route::GET('/libros/ficcion', 'LibrosController@index');
+Route::GET('/libros/novela', 'LibrosController@create');
+Route::GET('/libros/novelaliteratura', 'LibrosController@store');
